@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+h2,
+h3 {
+  text-align: center;
+}
+body {
+  background: #535353;
+  color: #f1f1f1;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*header*/
+.header {
+  background: #d7d7d7;
+  display: grid;
+  gap: 16px;
+}
+
+.hameleon {
+  width: 56px;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo {
+  max-width: 260px;
+}
+
+.artist {
+  max-width: 320px;
+}
+/*main*/
+
+main {
+  display: grid;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+.page img {
+  margin: auto;
+
+  width: 100%;
+  position: relative;
+  top: -24px;
+}
+
+.bio {
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.bio h3 {
+  text-align: center;
+}
+
+.art {
+  max-width: 320px;
+  justify-self: center;
+}
+
+.tracks {
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.releases {
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  justify-items: end;
+}
+/* footer*/
+
+.footer {
+  background: #2e2e2e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer img {
+  width: 42px;
+}
+
+/*адаптив десктоп*/
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    column-gap: 80px;
+    row-gap: 60px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page {
+    grid-column: 1 / -1;
+  }
+  .page img {
+    width: 200%;
+    top: -75px;
+    left: -50%;
+  }
+
+  .bio {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .shneine-art {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .releases {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .pepe-art {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .tracks {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .watafa-art {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .art {
+    width: auto;
+    max-width: 400px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo {
+    width: 70%;
+    max-width: 600px;
+  }
+  .releases img {
+    width: 80%;
+  }
+}
